@@ -9,9 +9,7 @@ export const connectSocket = (userId) => {
   }
     const cleanedUserId = String(userId);
   socket = io(
-    import.meta.env.MODE === "development"
-      ? "http://localhost:4000"
-      : "/",
+  " https://real-time-chat-app-backend-n0dd.onrender.com",
     {
       query: { userId: cleanedUserId } // <--- FORCE userId to be string
     }
@@ -30,4 +28,5 @@ export const disconnectSocket = () =>{
         socket.disconnect();
         socket = null;
     }
+
 }
