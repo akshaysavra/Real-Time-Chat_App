@@ -17,7 +17,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Navbar";
 
 import { ToastContainer } from "react-toastify";
 
@@ -194,3 +194,4 @@ export default App;
 // };
 
 // export default App;
+
