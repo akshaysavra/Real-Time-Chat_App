@@ -4,7 +4,7 @@ let socket = null;
 
 export const connectSocket = (userId) => {
   if (!socket) {
-    socket = io("https://chat-app-jps9.onrender.com", {
+    socket = io("https://real-time-chat-app-1lm5.onrender.com", {
       query: { userId },
     });
   }
@@ -19,3 +19,4 @@ export const disconnectSocket = () => {
     socket = null;
   }
 };
+
